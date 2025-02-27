@@ -23,50 +23,75 @@
               <tbody>
                 <tr>
                   <!-- Left Column: Bio & Content -->
-                  <td style="padding:2.5%; width:63%; vertical-align:middle">
+                  <td style="padding:2.5%; width:63%; vertical-align:top">
+                    <!-- Profile photo on top -->
+                    <p style="text-align:center">
+                      <img src="images/neha_simha_pfp.jpg" alt="Profile Photo" style="width:150px; border-radius:50%;">
+                    </p>
                     <p style="text-align:center">
                       <name>Neha Simha</name>
                     </p>
                     <p>
-                      <strong>Bio</strong><br>
-                      I am a researcher interested in working at the intersection of artificial intelligence and medicine. Most recently, I worked at Stanford University with Dr. Rishi Raj in the Interstitial Lung Disease (ILD) program—analyzing clinical data to develop a machine learning model that predicts patient progression. I also collaborated with Dr. Curt Langlotz in the Center for Artificial Intelligence and Medical Imaging.
+                      I am a researcher working at the intersection of artificial intelligence and medicine. Most recently, I worked at Stanford University with <a href="https://med.stanford.edu/profiles/rishiraj">Dr. Rishi Raj</a> in the <a href="https://med.stanford.edu/ild.html">Interstitial Lung Disease (ILD) program</a>, analyzing clinical data to develop a machine learning model to predict patient prognosis. I also collaborated with <a href="https://curtlanglotz.com/">Dr. Curt Langlotz</a> in the <a href="https://aimi.stanford.edu/">Center for Artificial Intelligence in Medicine and Imaging.</a>
                       <br><br>
-                      I graduated from UC Berkeley in 2022 with a B.A. in Molecular and Cell Biology, Immunology. During undergrad, I was a research apprentice at the Scott Lab, working with Dr. Philip Shiu and Professor Kristin Scott on understanding interactions between taste modalities in the fruit fly brain.
+                      I graduated from UC Berkeley in 2022 with a B.A. in <a href="https://mcb.berkeley.edu/undergrad/imm">Molecular and Cell Biology, Immunology</a>. During undergrad, I was a research apprentice at the <a href="https://mcb.berkeley.edu/labs/scott/">Scott Lab</a>, working with postdoctoral scholar <a href="https://scholar.google.com/citations?user=hS8iPyEAAAAJ&hl=en">Philip Shiu</a> and <a href="https://mcb.berkeley.edu/faculty/NEU/scottk.html">Professor Kristin Scott</a> on understanding interactions between taste modalities in the fruit fly brain. I also took upper division public health classes and volunteered at <a href= "https://www.ocf.berkeley.edu/~jeeva/">health clinics</a>, sparking a passion in equitable healthcare access.
                     </p>
-                    <p>Email: nsimha [at] berkeley.edu</p>
+                    <p>Email: nsimha [at] berkeley [dot] edu</p>
                     <p style="text-align:center">
-                      <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp; 
-                      <a href="https://scholar.google.com">Google Scholar</a>
+                      <a href="data/ns_cv.pdf">CV</a> &nbsp;/&nbsp; 
+                      <a href="https://scholar.google.com/citations?user=FBnDe40AAAAJ&hl=en&oi=ao">Google Scholar</a>
                     </p>
 
                     <!-- Research Section -->
-                    <table style="width:100%; border:0; margin:0 auto;">
+                    <table style="width:100%; border:0; margin:20px 0;">
                       <tbody>
                         <tr>
-                          <td style="padding:20px; vertical-align:middle">
+                          <td style="padding:20px 0">
                             <heading>Research</heading>
                           </td>
                         </tr>
-                        <!-- Research Project 1 -->
-                        <tr>
-                          <td style="padding:20px; vertical-align:middle">
+                        <!-- Research Project 1: Drosophila -->
+                        <tr onmouseover="drosophila_start()" onmouseout="drosophila_stop()">
+                          <td style="padding:20px 0; border-top:1px solid #ccc;">
                             <table style="width:100%; border:0; margin:0 auto;">
                               <tbody>
                                 <tr>
+                                  <!-- Images Column -->
                                   <td style="padding:20px; width:25%; vertical-align:middle">
-                                    <!-- Replace with an appropriate image -->
-                                    <img src="images/drosophila.jpg" alt="Drosophila Model" width="160">
+                                    <div class="one">
+                                      <div class="two" id="drosophila_hover">
+                                        <img src="images/scott_lab_img2.png" alt="Drosophila Hover" width="160">
+                                      </div>
+                                      <img id="drosophila_default" src="images/scott_lab_img1.png" alt="Drosophila Default" width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                      function drosophila_start() {
+                                        document.getElementById('drosophila_hover').style.opacity = "1";
+                                        document.getElementById('drosophila_default').style.opacity = "0";
+                                      }
+                                      function drosophila_stop() {
+                                        document.getElementById('drosophila_hover').style.opacity = "0";
+                                        document.getElementById('drosophila_default').style.opacity = "1";
+                                      }
+                                      drosophila_stop();
+                                    </script>
                                   </td>
+                                  <!-- Details Column -->
                                   <td style="padding:20px; width:75%; vertical-align:middle">
                                     <a href="#"><papertitle>A Drosophila computational brain model reveals sensorimotor processing</papertitle></a>
                                     <br>
-                                    <strong>Neha Simha</strong>, <a href="#">Philip Shiu</a>, <a href="#">Kristin Scott</a>
-                                    <br>
-                                    Department of Molecular and Cell Biology, University of California, Berkeley, 2022
-                                    <br>
-                                    <em>Honors Thesis / Poster</em> &nbsp; <a href="#">paper</a>
+                                    <ul style="list-style-type: disc; margin-left: 20px;">
+                                      <li>
+                                        Shiu, P.K., Sterne, G.R., Spiller, N., <strong>Simha, N.</strong>, et al. A Drosophila computational brain model reveals sensorimotor processing. <em>Nature</em> 634, 210–219 (2024).<br>
+                                        <a href="https://www.nature.com/articles/s41586-024-07763-9#citeas">paper</a>
+                                      </li>
+                                      <li>
+                                        <strong>Neha Simha</strong>, Philip Shiu, Kristin Scott, Department of Molecular and Cell Biology, University of California, Berkeley, 2022<br>
+                                        Interactions between taste modalities in <em>D. melanogaster</em> honors thesis <a href="Neha Simha honors thesis paper final.pdf">paper</a> / <a href="Simha, Neha Research Poster.pdf">poster</a>
+                                      </li>
+                                    </ul>
                                     <p>
-                                      We proposed a leaky integrate-and-fire computational model of the Drosophila brain to study circuit properties underlying feeding behaviors.
+                                      We proposed a leaky integrate-and-fire computational model of the Drosophila brain to study circuit properties of feeding behaviors.
                                     </p>
                                   </td>
                                 </tr>
@@ -74,33 +99,49 @@
                             </table>
                           </td>
                         </tr>
-                        <!-- Research Project 2 -->
-                        <tr>
-                          <td style="padding:20px; vertical-align:middle">
+
+                        <!-- Research Project 2: ILD -->
+                        <tr onmouseover="ild_start()" onmouseout="ild_stop()">
+                          <td style="padding:20px 0; border-top:1px solid #ccc;">
                             <table style="width:100%; border:0; margin:0 auto;">
                               <tbody>
                                 <tr>
+                                  <!-- Images Column -->
                                   <td style="padding:20px; width:25%; vertical-align:middle">
-                                    <!-- Replace with an appropriate image -->
-                                    <img src="images/ild_research.jpg" alt="ILD Research" width="160">
+                                    <div class="one">
+                                      <div class="two" id="ild_hover">
+                                        <img src="images/stanford_img2.png" alt="ILD Hover" width="160">
+                                      </div>
+                                      <img id="ild_default" src="images/stanford_img1.png" alt="ILD Default" width="160">
+                                    </div>
+                                    <script type="text/javascript">
+                                      function ild_start() {
+                                        document.getElementById('ild_hover').style.opacity = "1";
+                                        document.getElementById('ild_default').style.opacity = "0";
+                                      }
+                                      function ild_stop() {
+                                        document.getElementById('ild_hover').style.opacity = "0";
+                                        document.getElementById('ild_default').style.opacity = "1";
+                                      }
+                                      ild_stop();
+                                    </script>
                                   </td>
+                                  <!-- Details Column -->
                                   <td style="padding:20px; width:75%; vertical-align:middle">
                                     <a href="#"><papertitle>Using machine learning to predict progression and classify interstitial lung disease</papertitle></a>
                                     <br>
-                                    <ul>
+                                    <ul style="list-style-type: disc; margin-left: 20px;">
                                       <li>
                                         <strong>Neha Simha</strong>, Manoj Maddali, Rishi Raj<br>
-                                        <em>Lung Texture Analysis Predicts Clinical Progression in a Cohort of Patients With Dermatomyositis and Scleroderma-related Interstitial Lung Disease</em> <a href="#">abstract</a>
+                                        <em>Lung Texture Analysis Predicts Clinical Progression in a Cohort of Patients With Dermatomyositis and Scleroderma-related Interstitial Lung Disease</em> <a href="ATS_abstract_final.pdf">abstract</a>
                                       </li>
-                                      <br>
                                       <li>
                                         Solmaz Ehteshami-Afshar, <strong>Neha Simha</strong>, Rishi Raj<br>
-                                        <em>Mortality and Intubation Risk Factors in Patients With Interstitial Lung Disease Infected With COVID-19 in the United States in 2020</em> <a href="#">abstract</a>
+                                        <em>Mortality and Intubation Risk Factors in Patients With Interstitial Lung Disease Infected With COVID-19 in the United States in 2020</em> <a href="solmaz_abs.pdf">abstract</a>
                                       </li>
-                                      <br>
                                       <li>
                                         Cara Van Uden, Christian Bluethgen, Maayane Attias, Malgorzata Polacin, Haiwei Henry Guo, <strong>Neha Simha</strong>, Rishi Raj, Curtis Langlotz<br>
-                                        <em>Exploring the Versatility of Zero-Shot CLIP for Interstitial Lung Disease Classification</em> <a href="#">preprint</a>
+                                        <em>Exploring the Versatility of Zero-Shot CLIP for Interstitial Lung Disease Classification</em> <a href="https://arxiv.org/abs/2306.01111">preprint</a>
                                       </li>
                                     </ul>
                                     <p>
@@ -116,23 +157,43 @@
                     </table>
 
                     <!-- Teaching & Volunteering Section -->
-                    <table style="width:100%; border:0; margin:0 auto;">
+                    <table style="width:100%; border:0; margin:20px 0;">
                       <tbody>
                         <tr>
-                          <td style="padding:20px; vertical-align:middle">
+                          <td style="padding:20px 0">
                             <heading>Teaching &amp; Volunteering</heading>
                           </td>
                         </tr>
-                        <tr>
-                          <td style="padding:20px; vertical-align:middle">
+                        <style>
+                            .teaching-img {
+                              width: 150px;
+                              /* Add any additional styling if needed */
+                            }
+                          </style>                          
+                        <!-- Experience 1 -->
+                        <tr style="border-top:1px solid #ccc;">
+                          <td style="padding:20px;">
+                            <img src="images/sffc.png" alt="Volunteering" class="teaching-img">
                             <p>
-                              I volunteer once a week at the San Francisco Free Clinic, where we provide free medical care to uninsured patients—including diabetes management, imaging referrals, and minor procedures. I am passionate about universal healthcare access and contributing to a future where quality care is available to everyone.
+                              I volunteer once a week at the <a href="https://sffc.org/">San Francisco Free Clinic</a>, where we provide free medical care to uninsured patients, including diabetes management, imaging referrals, and minor procedures. I am passionate about contributing to a future where quality care is available to everyone, regardless of their insurance status.
                             </p>
+                          </td>
+                        </tr>
+                        <!-- Experience 2 -->
+                        <tr style="border-top:1px solid #ccc;">
+                          <td style="padding:20px;">
+                            <img src="images/inspirit_ai_graphic.png" alt="Inspirit AI Teaching" class="teaching-img">
                             <p>
-                              Since 2024, I have taught part-time at Inspirit AI, facilitating the Scholars curriculum for elementary and high school students (in-person at Khan Lab School and California High School as well as virtually). I have also taught a Deep Dives course on AI/ML applications in medicine and mentor students one-on-one.
+                              Since 2024, I have taught part-time at Inspirit AI, facilitating the <a href="https://www.inspiritai.com/liveonline">Scholars curriculum</a> for elementary and high school students (in-person at Khan Lab School and California High School as well as virtually). I have also taught the <a href = "https://www.inspiritai.com/returning-students-deep-dives">Deep Dives course</a> on AI/ML applications in medicine and <a href="https://www.inspiritai.com/ai-research-program">mentor students one-on-one</a>.
                             </p>
+                          </td>
+                        </tr>
+                        <!-- Experience 3 -->
+                        <tr style="border-top:1px solid #ccc;">
+                          <td style="padding:20px;">
+                            <img src="images/decal_logo.png" alt="DeCal Teaching" class="teaching-img">
                             <p>
-                              In 2021, I co-taught a DeCal course at UC Berkeley on substance use disorders, drug policy, and neuroscience—teaching alongside Erin Sibel Sezgin, who originally developed the course content.
+                              In 2021, I co-taught a <a href="https://decal.studentorg.berkeley.edu/courses/5889">DeCal course</a> at UC Berkeley on substance use disorders, drug policy, and neuroscience—teaching alongside <a href="https://www.linkedin.com/in/erinsibelsezgin/">Erin Sibel Sezgin</a>, who originally developed the course content.
                             </p>
                           </td>
                         </tr>
@@ -140,19 +201,7 @@
                     </table>
                     
                   </td>
-                  <!-- Right Column: Profile Image -->
-                  <td style="padding:2.5%; width:40%; max-width:40%">
-                    <!-- Replace with Neha's profile image -->
-                    <a href="images/neha.jpg">
-                      <img style="width:100%; max-width:100%" id="display_img" alt="profile photo" src="images/neha.jpg" class="hoverZoomLink">
-                    </a>
-                    <p id="friends_label" align="center">
-                      <!-- Optionally add a caption here -->
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="8">
               <tbody>
                 <tr>
