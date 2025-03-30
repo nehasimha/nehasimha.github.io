@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neha Simha</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    body { zoom: 1.15; }
+    nav { margin-bottom: 20px; }
+    nav a { margin-right: 10px; text-decoration: none; font-size: 1.2em; }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%; max-width:800px; border:0; margin:0 auto;">
+    <tr>
+      <td style="padding:2.5%; vertical-align:top">
+
+        <!-- Navigation -->
+        <nav style="text-align:center;">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="teaching_volunteering.html">Teaching & Volunteering</a>
+          <a href="reading.html">Reading</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+
+  <div style="max-width:800px; margin:auto;">
+    <h1 style="font-size: 1.6em;">Research</h1>
+
+    <!-- Research Project 1: Drosophila -->
+    <table style="width:100%; border:0; margin:20px 0;">
+      <tbody>
+        <tr onmouseover="drosophila_start()" onmouseout="drosophila_stop()">
+          <td style="padding:20px 0; border-top:1px solid #ccc;">
+            <table style="width:100%; border:0; margin:0 auto;">
+              <tbody>
+                <tr>
+                  <!-- Images Column -->
+                  <td style="padding:20px; width:25%; vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="drosophila_hover">
+                        <img src="images/scott_lab_img1.png" alt="Drosophila Hover" width="160">
+                      </div>
+                      <img id="drosophila_default" src="images/scott_lab_img2.png" alt="Drosophila Default" width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function drosophila_start() {
+                        document.getElementById('drosophila_hover').style.opacity = "1";
+                        document.getElementById('drosophila_default').style.opacity = "0";
+                      }
+                      function drosophila_stop() {
+                        document.getElementById('drosophila_hover').style.opacity = "0";
+                        document.getElementById('drosophila_default').style.opacity = "1";
+                      }
+                      drosophila_stop();
+                    </script>
+                  </td>
+                  <!-- Details Column -->
+                  <td style="padding:20px; width:75%; vertical-align:middle">
+                    <a href="#"><strong>A Drosophila computational brain model reveals sensorimotor processing</strong></a>
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                      <li>Shiu, P.K., Sterne, G.R., Spiller, N., <strong>Simha, N.</strong>, et al. <em>Nature</em> 634, 210–219 (2024). <a href="https://www.nature.com/articles/s41586-024-07763-9#citeas">paper</a></li>
+                      <li><strong>Neha Simha</strong>, Philip Shiu, Kristin Scott, UC Berkeley, 2022. Interactions between taste modalities in <em>D. melanogaster</em> honors thesis <a href="data/Neha_Simha_honors_thesis_paper_final.pdf">paper</a> / <a href="data/neha_simha_honors_thesis_poster.pdf">poster</a></li>
+                    </ul>
+                    <p>We proposed a leaky integrate-and-fire computational model of the Drosophila brain to study circuit properties of feeding behaviors.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Research Project 2: ILD -->
+        <tr onmouseover="ild_start()" onmouseout="ild_stop()">
+          <td style="padding:20px 0; border-top:1px solid #ccc;">
+            <table style="width:100%; border:0; margin:0 auto;">
+              <tbody>
+                <tr>
+                  <!-- Images Column -->
+                  <td style="padding:20px; width:25%; vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id="ild_hover">
+                        <img src="images/stanford_img1.png" alt="ILD Hover" width="160">
+                      </div>
+                      <img id="ild_default" src="images/stanford_img2.png" alt="ILD Default" width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function ild_start() {
+                        document.getElementById('ild_hover').style.opacity = "1";
+                        document.getElementById('ild_default').style.opacity = "0";
+                      }
+                      function ild_stop() {
+                        document.getElementById('ild_hover').style.opacity = "0";
+                        document.getElementById('ild_default').style.opacity = "1";
+                      }
+                      ild_stop();
+                    </script>
+                  </td>
+                  <!-- Details Column -->
+                  <td style="padding:20px; width:75%; vertical-align:middle">
+                    <a href="#"><papertitle>Using machine learning to predict progression and classify interstitial lung disease</papertitle></a>
+                    <br>
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                      <li>
+                        <strong>Neha Simha</strong>, Manoj Maddali, Rishi Raj<br>
+                        <em>Lung Texture Analysis Predicts Clinical Progression in a Cohort of Patients With Dermatomyositis and Scleroderma-related Interstitial Lung Disease</em> 
+                        <a href="data/ATS_abstract_final.pdf">abstract</a>
+                      </li>
+                      
+                      <li>
+                        Solmaz Ehteshami-Afshar, <strong>Neha Simha</strong>, Rishi Raj<br>
+                        <em>Mortality and Intubation Risk Factors in Patients With Interstitial Lung Disease Infected With COVID-19 in the United States in 2020</em> 
+                        <a href="data/solmaz_abs.pdf">abstract</a>
+                      </li>    
+                      
+                      <li>
+                        Cara Van Uden, Christian Bluethgen, Maayane Attias, Malgorzata Polacin, Haiwei Henry Guo, <strong>Neha Simha</strong>, Rishi Raj, Curtis Langlotz<br>
+                        <em>Exploring the Versatility of Zero-Shot CLIP for Interstitial Lung Disease Classification</em> <a href="https://arxiv.org/abs/2306.01111">preprint</a>
+                      </li>
+                    </ul>
+                    <p>
+                      We used machine learning and data analysis to classify interstitial lung disease via CT scan features and predict disease progression using clinical metrics.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>

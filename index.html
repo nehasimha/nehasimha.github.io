@@ -1,236 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Neha Simha</title>
-    <meta name="author" content="Neha Simha">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neha Simha</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    body { zoom: 1.15; }
+    nav { margin-bottom: 20px; }
+    nav a { margin-right: 10px; text-decoration: none; font-size: 1.2em; }
+  </style>
+</head>
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-    <style>
-      body {
-        zoom: 1.15;
-      }
-    </style>
-  </head>
+<body>
+  <table style="width:100%; max-width:800px; border:0; margin:0 auto;">
+    <tr>
+      <td style="padding:2.5%; vertical-align:top">
 
-  <body>
-    <table style="width:100%; max-width:800px; border:0; margin:0 auto; border-collapse:separate;">
-      <tbody>
-        <tr>
-          <td style="padding:0">
-            <table style="width:100%; border:0; margin:0 auto;">
-              <tbody>
-                <tr>
-                  <!-- Left Column: Bio & Content -->
-                  <td style="padding:2.5%; width:63%; vertical-align:top">
-                    <!-- Profile photo on top -->
-                    <p style="text-align:center">
-                      <img src="images/neha_simha_pfp.jpg" alt="Profile Photo" style="width:150px; border-radius:50%;">
-                    </p>
-                    <p style="text-align:center">
-                      <name>Neha Simha</name>
-                    </p>
-                    <p>
-                      I am a researcher working at the intersection of artificial intelligence and medicine. Most recently, I worked at Stanford University with <a href="https://med.stanford.edu/profiles/rishiraj">Dr. Rishi Raj</a> in the <a href="https://med.stanford.edu/ild.html">Interstitial Lung Disease (ILD) program</a>, analyzing clinical data to develop a machine learning model to predict patient prognosis. I also collaborated with <a href="https://curtlanglotz.com/">Dr. Curt Langlotz</a> in the <a href="https://aimi.stanford.edu/">Center for Artificial Intelligence in Medicine and Imaging.</a>
-                      <br><br>
-                      I graduated from UC Berkeley in 2022 with a B.A. in <a href="https://mcb.berkeley.edu/undergrad/imm">Molecular and Cell Biology, Immunology</a>. During undergrad, I was a research apprentice at the <a href="https://mcb.berkeley.edu/labs/scott/">Scott Lab</a>, working with postdoctoral scholar <a href="https://scholar.google.com/citations?user=hS8iPyEAAAAJ&hl=en">Philip Shiu</a> and <a href="https://mcb.berkeley.edu/faculty/NEU/scottk.html">Professor Kristin Scott</a> on understanding interactions between taste modalities in the fruit fly brain. I also took upper division public health classes and volunteered at <a href= "https://www.ocf.berkeley.edu/~jeeva/">health clinics</a>, sparking a passion in equitable healthcare access.
-                    </p>
-                    <p>Email: nsimha [at] berkeley [dot] edu</p>
-                    <p style="text-align:center">
-                      <a href="data/ns_cv.pdf">CV</a> &nbsp;/&nbsp; 
-                      <a href="https://scholar.google.com/citations?user=FBnDe40AAAAJ&hl=en&oi=ao">Google Scholar</a>
-                    </p>
+        <!-- Navigation -->
+        <nav style="text-align:center;">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="teaching_volunteering.html">Teaching & Volunteering</a>
+          <a href="reading.html">Reading</a>
+          <a href="blog.html">Blog</a>
+        </nav>
 
-                    <!-- Research Section -->
-                    <table style="width:100%; border:0; margin:20px 0;">
-                      <tbody>
-                        <tr>
-                          <td style="padding:20px 0">
-                            <heading>Research</heading>
-                          </td>
-                        </tr>
-                        <!-- Research Project 1: Drosophila -->
-                        <tr onmouseover="drosophila_start()" onmouseout="drosophila_stop()">
-                          <td style="padding:20px 0; border-top:1px solid #ccc;">
-                            <table style="width:100%; border:0; margin:0 auto;">
-                              <tbody>
-                                <tr>
-                                  <!-- Images Column -->
-                                  <td style="padding:20px; width:25%; vertical-align:middle">
-                                    <div class="one">
-                                      <div class="two" id="drosophila_hover">
-                                        <img src="images/scott_lab_img2.png" alt="Drosophila Hover" width="160">
-                                      </div>
-                                      <img id="drosophila_default" src="images/scott_lab_img1.png" alt="Drosophila Default" width="160">
-                                    </div>
-                                    <script type="text/javascript">
-                                      function drosophila_start() {
-                                        document.getElementById('drosophila_hover').style.opacity = "1";
-                                        document.getElementById('drosophila_default').style.opacity = "0";
-                                      }
-                                      function drosophila_stop() {
-                                        document.getElementById('drosophila_hover').style.opacity = "0";
-                                        document.getElementById('drosophila_default').style.opacity = "1";
-                                      }
-                                      drosophila_stop();
-                                    </script>
-                                  </td>
-                                  <!-- Details Column -->
-                                  <td style="padding:20px; width:75%; vertical-align:middle">
-                                    <a href="#"><papertitle>A Drosophila computational brain model reveals sensorimotor processing</papertitle></a>
-                                    <br>
-                                    <ul style="list-style-type: disc; margin-left: 20px;">
-                                      <li>
-                                        Shiu, P.K., Sterne, G.R., Spiller, N., <strong>Simha, N.</strong>, et al. A Drosophila computational brain model reveals sensorimotor processing. <em>Nature</em> 634, 210–219 (2024).<br>
-                                        <a href="https://www.nature.com/articles/s41586-024-07763-9#citeas">paper</a>
-                                        <li>
-                                          <strong>Neha Simha</strong>, Philip Shiu, Kristin Scott, Department of Molecular and Cell Biology, University of California, Berkeley, 2022<br>
-                                          Interactions between taste modalities in <em>D. melanogaster</em> honors thesis
-                                          <a href="data/Neha_Simha_honors_thesis_paper_final.pdf">paper</a> /
-                                          <a href="data/neha_simha_honors_thesis_poster.pdf">poster</a>
-                                        </li>  
-                                    </ul>
-                                    <p>                                      
-                                      We proposed a leaky integrate-and-fire computational model of the Drosophila brain to study circuit properties of feeding behaviors.
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
+        <!-- Profile -->
+        <div style="text-align:center">
+          <img src="images/neha_simha_pfp.jpg" alt="Profile Photo" style="width:150px; border-radius:50%;">
+          <h1>Neha Simha</h1>
+        </div>
 
-                        <!-- Research Project 2: ILD -->
-                        <tr onmouseover="ild_start()" onmouseout="ild_stop()">
-                          <td style="padding:20px 0; border-top:1px solid #ccc;">
-                            <table style="width:100%; border:0; margin:0 auto;">
-                              <tbody>
-                                <tr>
-                                  <!-- Images Column -->
-                                  <td style="padding:20px; width:25%; vertical-align:middle">
-                                    <div class="one">
-                                      <div class="two" id="ild_hover">
-                                        <img src="images/stanford_img2.png" alt="ILD Hover" width="160">
-                                      </div>
-                                      <img id="ild_default" src="images/stanford_img1.png" alt="ILD Default" width="160">
-                                    </div>
-                                    <script type="text/javascript">
-                                      function ild_start() {
-                                        document.getElementById('ild_hover').style.opacity = "1";
-                                        document.getElementById('ild_default').style.opacity = "0";
-                                      }
-                                      function ild_stop() {
-                                        document.getElementById('ild_hover').style.opacity = "0";
-                                        document.getElementById('ild_default').style.opacity = "1";
-                                      }
-                                      ild_stop();
-                                    </script>
-                                  </td>
-                                  <!-- Details Column -->
-                                  <td style="padding:20px; width:75%; vertical-align:middle">
-                                    <a href="#"><papertitle>Using machine learning to predict progression and classify interstitial lung disease</papertitle></a>
-                                    <br>
-                                    <ul style="list-style-type: disc; margin-left: 20px;">
-                                      <li>
-                                        <strong>Neha Simha</strong>, Manoj Maddali, Rishi Raj<br>
-                                        <em>Lung Texture Analysis Predicts Clinical Progression in a Cohort of Patients With Dermatomyositis and Scleroderma-related Interstitial Lung Disease</em> 
-                                        <a href="data/ATS_abstract_final.pdf">abstract</a>
-                                      </li>
-                                      
-                                      <li>
-                                        Solmaz Ehteshami-Afshar, <strong>Neha Simha</strong>, Rishi Raj<br>
-                                        <em>Mortality and Intubation Risk Factors in Patients With Interstitial Lung Disease Infected With COVID-19 in the United States in 2020</em> 
-                                        <a href="data/solmaz_abs.pdf">abstract</a>
-                                      </li>    
-                                      
-                                      <li>
-                                        Cara Van Uden, Christian Bluethgen, Maayane Attias, Malgorzata Polacin, Haiwei Henry Guo, <strong>Neha Simha</strong>, Rishi Raj, Curtis Langlotz<br>
-                                        <em>Exploring the Versatility of Zero-Shot CLIP for Interstitial Lung Disease Classification</em> <a href="https://arxiv.org/abs/2306.01111">preprint</a>
-                                      </li>
-                                    </ul>
-                                    <p>
-                                      We used machine learning and data analysis to classify interstitial lung disease via CT scan features and predict disease progression using clinical metrics.
-                                    </p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+        <!-- Bio -->
+        <p>
+          Currently, I work with the <a href="https://chenlab.io/">Chen Lab</a> on understanding stigmatizing language in clinical notes for pregnancy patients. Before that, I worked at Stanford University with <a href="https://med.stanford.edu/profiles/rishiraj">Dr. Rishi Raj</a> in the <a href="https://med.stanford.edu/ild.html">Interstitial Lung Disease (ILD) program</a>, analyzing clinical data to develop machine learning models to predict patient progression. I also collaborated with <a href="https://curtlanglotz.com/">Dr. Curt Langlotz</a> at the <a href="https://aimi.stanford.edu/">Center for Artificial Intelligence in Medicine and Imaging</a>.
+        </p>
 
-                    <!-- Teaching & Volunteering Section -->
-                    <table style="width:100%; border:0; margin:20px 0;">
-                      <tbody>
-                        <tr>
-                          <td style="padding:20px 0">
-                            <heading>Teaching &amp; Volunteering</heading>
-                          </td>
-                        </tr>
-                        <style>
-                            .teaching-img {
-                              width: 150px;
-                              /* Add any additional styling if needed */
-                            }
-                          </style>                          
-                        <!-- Experience 1 -->
-                        <tr style="border-top:1px solid #ccc;">
-                          <td style="padding:20px;">
-                            <img src="images/sffc.png" alt="Volunteering" class="teaching-img">
-                            <p>
-                              I volunteer once a week at the <a href="https://sffc.org/">San Francisco Free Clinic</a>, where we provide free medical care to uninsured patients, including diabetes management, imaging referrals, and minor procedures. I am passionate about contributing to a future where quality care is available to everyone, regardless of their insurance status.
-                            </p>
-                          </td>
-                        </tr>
-                        <!-- Experience 2 -->
-                        <tr style="border-top:1px solid #ccc;">
-                          <td style="padding:20px;">
-                            <img src="images/inspirit_ai_graphic.png" alt="Inspirit AI Teaching" class="teaching-img">
-                            <p>
-                              Since 2024, I have taught part-time at Inspirit AI, facilitating the <a href="https://www.inspiritai.com/liveonline">Scholars curriculum</a> for elementary and high school students (in-person at Khan Lab School and California High School as well as virtually). I have also taught the <a href = "https://www.inspiritai.com/returning-students-deep-dives">Deep Dives course</a> on AI/ML applications in medicine and <a href="https://www.inspiritai.com/ai-research-program">mentor students one-on-one</a>.
-                            </p>
-                          </td>
-                        </tr>
-                        <!-- Experience 3 -->
-                        <tr style="border-top:1px solid #ccc;">
-                          <td style="padding:20px;">
-                            <img src="images/south_asian_heart_center_logo.png" alt="Volunteering" class="teaching-img">
-                            <p>
-                              From 2019-2022, I volunteered at health clinics focused on educating and providing early detection for heart disease in the South Asian community, which experiences disproportionately high rates of cardiovascular disease. Our outreach was in collaboration with the <a href="https://southasianheartcenter.org/">South Asian Heart Center</a> and clinicians from the <a href="https://www.masalastudy.org/">MASALA study</a>.
-                            </p>
-                          </td>
-                        </tr>
-                        <!-- Experience 4 -->
-                        <tr style="border-top:1px solid #ccc;">
-                          <td style="padding:20px;">
-                            <img src="images/decal_logo.png" alt="DeCal Teaching" class="teaching-img">
-                            <p>
-                              In 2021, I co-taught a <a href="https://decal.studentorg.berkeley.edu/courses/5889">DeCal course</a> at UC Berkeley on substance use disorders, drug policy, and neuroscience—teaching alongside <a href="https://www.linkedin.com/in/erinsibelsezgin/">Erin Sibel Sezgin</a>, who originally developed the course content.
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>  
-                  </td>
-                  
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="8">
-              <tbody>
-                <tr>
-                  <td>
-                    <p style="text-align:right; font-size:small;">
-                      Huge thanks to <a href="https://jonbarron.info/">Jon Barron</a> for the website template!
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+        <p>
+          I graduated from UC Berkeley with a B.A. in <a href="https://mcb.berkeley.edu/undergrad/imm">Molecular and Cell Biology, Immunology</a>. During undergrad, I was a research apprentice at the <a href="https://mcb.berkeley.edu/labs/scott/">Scott Lab</a>, working with <a href="https://scholar.google.com/citations?user=hS8iPyEAAAAJ&hl=en">Dr. Philip Shiu</a> and <a href="https://mcb.berkeley.edu/faculty/NEU/scottk.html">Professor Kristin Scott</a> on understanding interactions between taste modalities in the fruit fly brain. My experiences also include volunteering at <a href="https://www.ocf.berkeley.edu/~jeeva/">health clinics</a>, sparking my passion for equitable healthcare access.
+        </p>
+
+        <!-- Contact & Links -->
+        <p>Email: nsimha [at] berkeley [dot] edu</p>
+        <p>
+          <a href="data/ns_cv.pdf">CV</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=FBnDe40AAAAJ&hl=en&oi=ao">Google Scholar</a>
+        </p>
+
+      </td>
+    </tr>
+  </table>
+</body>
 </html>
-
